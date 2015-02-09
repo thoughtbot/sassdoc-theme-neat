@@ -6,10 +6,7 @@ var theme = themeleon(__dirname, function (t) {
   t.copy('assets');
 
   var options = {
-    partials: {
-      foo: 'views/foo.handlebars',
-      'foo/bar': 'views/foo/bar.handlebars',
-    },
+    partials: {},
   };
 
   t.handlebars('views/index.handlebars', 'index.html', options);
