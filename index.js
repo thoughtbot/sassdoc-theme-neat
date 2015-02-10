@@ -9,7 +9,7 @@ var theme = themeleon(__dirname, function (t) {
     partials: {},
   };
 
-  t.handlebars("views/index.handlebars", "index.html", options);
+  t.swig('views/index.swig', 'index.html');
 });
 
 module.exports = function (dest, ctx) {

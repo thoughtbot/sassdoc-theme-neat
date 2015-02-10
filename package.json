@@ -11,8 +11,9 @@
   ],
   "dependencies": {
     "extend": "^1.0.0",
-    "handlebars": "^2.0.0",
     "sassdoc-extras": "^2.0.0",
+    "swig": "^1.4.2",
+    "swig-extras": "0.*",
     "themeleon": "^3.0.0"
   },
   "devDependencies": {
