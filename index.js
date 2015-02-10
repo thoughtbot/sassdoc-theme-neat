@@ -1,28 +1,28 @@
-var themeleon = require('themeleon')().use('consolidate');
-var extend = require('extend');
-var extras = require('sassdoc-extras');
+var themeleon = require("themeleon")().use("consolidate");
+var extend = require("extend");
+var extras = require("sassdoc-extras");
 
 var theme = themeleon(__dirname, function (t) {
-  t.copy('assets');
+  t.copy("assets");
 
   var options = {
     partials: {},
   };
 
-  t.handlebars('views/index.handlebars', 'index.html', options);
+  t.handlebars("views/index.handlebars", "index.html", options);
 });
 
 module.exports = function (dest, ctx) {
   var def = {
     display: {
-      access: ['public', 'private'],
+      access: ["public", "private"],
       alias: false,
       watermark: true,
     },
     groups: {
-      'undefined': 'General',
+      "undefined": "General",
     },
-    'shortcutIcon': 'http://sass-lang.com/favicon.ico',
+    "shortcutIcon": "http://sass-lang.com/favicon.ico"
   };
 
   ctx.groups = extend(def.groups, ctx.groups);
