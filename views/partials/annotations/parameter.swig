@@ -1,7 +1,7 @@
-{% if item.parameters.length > 0 %}
+{% if item.parameter.length > 0 %}
   <h3 class="sub-heading">Parameters</h3>
   <dl class="parameters">
-  {% for parameter in item.parameters %}
+  {% for parameter in item.parameter %}
     <dt class="parameter">
       <code class="name">${{ parameter.name }}</code>
       <ul class="meta">
