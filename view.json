@@ -1,3 +1,9 @@
 {
-  "accentColor": "red"
+  "accentColor": "red",
+  "annotations": {
+   "function": ["description", "parameters", "returns", "example", "throws", "require", "usedby", "since", "see", "todo", "link", "author"],
+   "mixin": ["description", "parameters", "output", "example", "throws", "require", "usedby", "since", "see", "todo", "link", "author"],
+   "placeholder": ["description", "example", "throws", "require", "usedby", "since", "see", "todo", "link", "author"],
+   "variable": ["description", "prop", "require", "example", "usedby", "since", "see", "todo", "link", "author"]
+ }
 }
