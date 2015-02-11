@@ -30,7 +30,7 @@
     {% endif %}
   </div>
 
-  {% if view.basePath %}
-  <a class="view-source" href="{{ view.basePath }}/{{ item.file.path }}">View source</a>
+  {% if view.baseSourcePath %}
+  <a class="view-source" href="{{ view.baseSourcePath }}/{{ item.file.path }}">View source</a>
   {% endif %}
 </header>
