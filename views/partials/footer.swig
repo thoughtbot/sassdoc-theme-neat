@@ -1,7 +1,7 @@
 <div data-role="content-wrapper" id="footer">
-  <a href="http://thoughtbot.com"><img class="footer-logo" src="https://raw.githubusercontent.com/thoughtbot/presskit/master/logo/circle/png/robot_only_default.png"/></a>
+  <a href="{{ view.company.homepage }}"><img class="footer-logo" src="{{ view.company.logoPath }}"/></a>
 
-  <p>Neat is maintained and funded by <a href="http://thoughtbot.com/">thoughtbot</a>.</p>
+  <p>Neat is maintained and funded by <a href="{{ view.company.homepage }}">{{ view.company.name }}</a>.</p>
   <p>Documentation generated using <a href="http://sassdoc.com/">SassDoc</a>.</p>
-  <p>The names and logos for thoughtbot are trademarks of thoughtbot, inc. © <span id="year">2012-2015</span></p>
+  <p>The names and logos are trademarks of {{ view.company.name }} © <span id="year">{{ view.company.trademarkYears }}</span></p>
 </div>

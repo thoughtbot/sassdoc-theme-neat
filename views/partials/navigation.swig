@@ -1,13 +1,13 @@
 
 <nav class="side-nav">
   <ul class="social">
-    <li><a class="github" href="https://github.com/thoughtbot/neat">GitHub / Install</a></li>
-    <li><a class="twitter" href="https://twitter.com/bourbonsass">Twitter</a></li>
-    <li><a class="gitter" href="https://gitter.im/thoughtbot/neat">Gitter</a></li>
+    <li><a class="github" href="{{ view.links.github }}">GitHub / Install</a></li>
+    <li><a class="twitter" href="{{ view.links.twitter }}">Twitter</a></li>
+    <li><a class="gitter" href="{{ view.links.gitter }}">Gitter</a></li>
   </ul>
 
   <a class="logo-container" href="/">
-    <img alt="Bourbon Neat Logo" class="logo" src="assets/images/neat-logo.svg">
+    <img alt="{{ view.libraryName }} Logo" class="logo" src="{{ view.logoPath }}">
   </a>
 
   <ul class="list">

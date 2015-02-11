@@ -1,5 +1,4 @@
 {
-  "accentColor": "red",
   "annotations": {
    "function": ["description", "parameter", "return", "example", "throws", "since", "see", "todo", "link", "author"],
    "mixin": ["description", "parameter", "output", "example", "throws", "since", "see", "todo", "link", "author"],

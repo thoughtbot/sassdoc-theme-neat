@@ -22,8 +22,7 @@ module.exports = function (dest, ctx) {
     },
     groups: {
       "undefined": "General",
-    },
-    "shortcutIcon": "http://sass-lang.com/favicon.ico"
+    }
   };
 
   ctx.view = extend(require("./view.json"), ctx.view);

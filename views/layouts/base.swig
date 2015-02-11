@@ -7,6 +7,7 @@
     <meta name="description" content="{{ package.description }}">
     <link href="http://fonts.googleapis.com/css?family=Nunito:300,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600italic,600,700,700italic,900,300italic,300,200italic,200" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ view.faviconPath }}" />
     <title>{{ package.title }}</title>
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>

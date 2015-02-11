@@ -6,8 +6,8 @@
 <script src="assets/js/main.js"></script>
 <script>
   var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-1485842-21']);
-    _gaq.push(['_setDomainName', 'bourbon.io']);
+    _gaq.push(['_setAccount', '{{ view.analytics.account }}']);
+    _gaq.push(['_setDomainName', '{{ view.analytics.domain}}']);
     _gaq.push(['_trackPageview']);
     (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
