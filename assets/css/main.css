@@ -734,6 +734,8 @@ p code, ul code, ol code {
   position: absolute;
   right: 0;
   top: 0; }
+  .example .description p {
+    display: inline; }
 
 .search-bar {
   padding: 2em 0; }
