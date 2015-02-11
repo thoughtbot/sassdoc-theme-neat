@@ -6,8 +6,8 @@
     <li><a class="gitter" href="{{ view.links.gitter }}">Gitter</a></li>
   </ul>
 
-  <a class="logo-container" href="/">
-    <img alt="{{ view.libraryName }} Logo" class="logo" src="{{ view.logoPath }}">
+  <a class="logo-container" href="{{ view.library.homepage }}">
+    <img alt="{{ view.library.name }} Logo" class="logo" src="{{ view.logoPath }}">
   </a>
 
   <ul class="list">
