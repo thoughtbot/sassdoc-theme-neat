@@ -6,7 +6,7 @@
   </h2>
 
   {% if item.context.type == "variable" %}
-    <span class="type-label">{{ item.type[0] }}</span>
+    <span class="type-label">{{ item.type }}</span>
   {% endif %}
 
   <div class="metadata">
