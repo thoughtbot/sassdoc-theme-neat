@@ -1,3 +1,3 @@
-{% if item.htmlDescription %}
-  <p>{{ item.htmlDescription | safe }}</p>
+{% if item.description %}
+  <p>{{ item.description | safe }}</p>
 {% endif %}

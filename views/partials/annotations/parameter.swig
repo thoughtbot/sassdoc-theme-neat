@@ -17,7 +17,7 @@
     </dt>
     <dd class="parameter-definition">
       <div class="description">
-        {{ parameter.htmlDescription | default("<p>No description available.</p>") | safe }}
+        {{ parameter.description | default("<p>No description available.</p>") | safe }}
       </div>
     </dd>
   {% endfor %}

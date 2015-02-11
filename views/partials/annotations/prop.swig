@@ -16,7 +16,7 @@
     {% for prop in item.prop %}
       <tr class="item__parameter">
         <th scope="row" data-label="name"><code>{{ prop.name }}</code></th>
-        <td data-label="desc">{{ prop.htmlDescription | default('&mdash;<span class="visually-hidden"> none</span>') | safe }}</td>
+        <td data-label="desc">{{ prop.description | default('&mdash;<span class="visually-hidden"> none</span>') | safe }}</td>
         <td data-label="type">
         {{ prop.type | split('|') | trim | capitalize | join(', ') }}
         </td>
