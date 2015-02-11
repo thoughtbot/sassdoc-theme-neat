@@ -2,6 +2,10 @@
   "name": "sassdoc-theme-neat",
   "description": "SassDoc theme used in the Bourbon suite.",
   "version": "0.0.1",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/thoughtbot/sassdoc-theme-neat"
+  },
   "keywords": [
     "sassdoc-theme",
     "sassdoc",
