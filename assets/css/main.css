@@ -848,6 +848,9 @@ footer {
   border-top: 2px #f0ead8 solid;
   padding: 4em 0 3em; }
 
+.footer-logo {
+  max-width: 100px; }
+
 table {
   border-collapse: collapse;
   margin: 0.75 0;
