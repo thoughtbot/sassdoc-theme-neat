@@ -23,6 +23,43 @@ nav.side-nav {
     margin: 0;
     padding: 0;
 
+    ul{
+      margin: 0;
+      background: rgba($heading-background-color, 0.5);
+      @include border-color(null null $heading-background-color null);
+      @include border-width(0 0 1px 0);
+      @include border-style(null null solid null);
+      padding: 0;
+      max-height: 55px;
+      overflow: hidden;
+      @include transition(max-height 300ms ease-in);
+      &.shown{
+        @include transition(max-height 300ms ease-in);
+        &>h2{
+          &:after{
+            @include triangle(12px, gray, up);
+            border-top: none;
+          }
+        }
+      }
+
+      &>h2{
+        margin: 0;
+        padding: unpack(0.8rem 1.5rem);
+        font-size: 1.4em;
+        color: shade($background-color, 60%);
+        cursor: pointer;
+        position: relative;
+        &:after{
+          @include triangle(12px, gray, down);
+          content : "";
+          position: absolute;
+          right: 20px;
+          top: 50%;
+        }
+      }
+    }
+
     li {
       list-style-type: none;
 
@@ -39,7 +76,7 @@ nav.side-nav {
       &.title {
         a {
           @extend %style--type-heading;
-          padding: 0.7rem;
+          padding: 0.7rem 1.5rem;
           font-size: 0.8em;
         }
 
@@ -53,9 +90,10 @@ nav.side-nav {
       a {
         @include transition;
         border-bottom: 1px solid $heading-background-color;
+        background: #fff;
         color: #555;
         display: block;
-        padding: 0.7rem;
+        padding: 0.7rem 1.5rem;
         position: relative;
 
         &:hover {
@@ -77,6 +115,11 @@ nav.side-nav {
           &:before {
             background: $orange;
           }
+        }
+      }
+      &:last-child{
+        a{
+          border-bottom: none;
         }
       }
     }
