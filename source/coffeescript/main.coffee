@@ -3,6 +3,7 @@ class App
 
   $items = $("article.item")
   $searchInput = $(".search-field")
+  $groupsHandler = $("ul.list h2.type-title")
   $searchForm = $("[data-role=search-form]")
   $suggestionContainer = $(".suggestion-container")
   $suggestions = $(".#{LINK_CLASS}")
@@ -24,6 +25,7 @@ class App
   constructor: ->
     hljs.initHighlightingOnLoad()
     @initSearch()
+    @initGroupsToggle()
 
   fillSuggestions: (items) ->
     $suggestionContainer.html ""
@@ -46,9 +48,24 @@ class App
       $searchInput.val $target.parent().data "name"
       suggestions = self.fillSuggestions([])
 
+  _hideChilds = (pointer) ->
+    pointer.removeClass('shown').css("max-height","55px")
+
+  _showChilds = (pointer) ->
+    pointerPosition = pointer.position().top
+    ul_max_height   = parseInt(pointer.find('li').length) * 45 + 55;
+    pointer.addClass('shown').css("max-height",ul_max_height+"px");
+    $('.side-nav').animate({scrollTop:pointerPosition},800);
+
+  initGroupsToggle: ->
+    $groupsHandler.on("click", (event) ->
+      if    $(this).parent('ul').hasClass('shown')
+      then  _hideChilds $(this).parent('ul')
+      else  _showChilds $(this).parent('ul')
+    )
+
   initSearch: ->
     self = @
-
     $searchInput.on("keyup", (event) ->
       if event.keyCode isnt 40 and event.keyCode isnt 38
         currentSelection = -1
@@ -58,9 +75,6 @@ class App
       return
     ).on "search", ->
         suggestions = self.search $(@).val()
-
-
-
 
 
 

@@ -12,21 +12,24 @@
 
   <ul class="list">
     {% for group_name, group in data.byGroupAndType %}
-      {% for type, items in group %}
-        {% if type == "mixin" %}
-          {% include "type_list.swig" %}
-        {% endif %}
-      {% endfor %}
-      {% for type, items in group %}
-        {% if type == "function" %}
-          {% include "type_list.swig" %}
-        {% endif %}
-      {% endfor %}
-      {% for type, items in group %}
-        {% if type == "variable" %}
-          {% include "type_list.swig" %}
-        {% endif %}
-      {% endfor %}
+      <ul>
+        <h2 class="type-title"> {{group_name}} </h2>
+        {% for type, items in group %}
+          {% if type == "mixin" %}
+            {% include "type_list.swig" %}
+          {% endif %}
+        {% endfor %}
+          {% for type, items in group %}
+            {% if type == "function" %}
+              {% include "type_list.swig" %}
+            {% endif %}
+          {% endfor %}
+          {% for type, items in group %}
+            {% if type == "variable" %}
+              {% include "type_list.swig" %}
+            {% endif %}
+          {% endfor %}
+      </ul>
     {% endfor %}
   </ul>
 </nav>
