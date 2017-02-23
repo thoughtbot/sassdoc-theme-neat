@@ -1,3 +1,3 @@
-# neat-sassdoc-theme
+# Neat SassDoc Theme
 
-> SassDoc theme used in the Bourbon suite.
+This project is no longer being actively maintained.
